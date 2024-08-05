@@ -142,7 +142,7 @@ export default function Section6() {
             height="25"
             viewBox="0 0 15 25"
             fill="none"
-            className="prev_btn w-[2.66667rem] h-[4.26667rem] md:w-[0.9375rem] md:h-[1.5625rem]"
+            className="prev_btn cursor-pointer w-[2.66667rem] h-[4.26667rem] md:w-[0.9375rem] md:h-[1.5625rem]"
             >
             <path
               d="M13.2959 23.1909L2.21635 12.5001L13.2959 1.80934"
@@ -159,7 +159,7 @@ export default function Section6() {
             height="25"
             viewBox="0 0 15 25"
             fill="none"
-            className="next_btn w-[2.66667rem] h-[4.26667rem] md:w-[0.9375rem] md:h-[1.5625rem]"
+            className="next_btn cursor-pointer w-[2.66667rem] h-[4.26667rem] md:w-[0.9375rem] md:h-[1.5625rem]"
             >
             <path
               d="M1.7041 1.80908L12.7836 12.4999L1.7041 23.1907"
