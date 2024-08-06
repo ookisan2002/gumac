@@ -16,7 +16,7 @@ export default function Section1() {
         </h3>
       </div>
       <div data-aos="fade-left" className="flex flex-col  max-md:flex-row ">
-        <div className="space-y-[2rem] max-md:w-[37.33rem]">
+        <div className=" max-md:w-[37.33rem]">
           <div className="space-y-[0.5rem] flex flex-col">
             <p className="text-[0.875rem] font-normal lead-[1.375rem] uppercase text-[rgba(255,255,255,0.65)] max-md:text-[3.2rem] max-md:font-medium max-md:leading-[5.86667rem]">
               KHÁCH HÀNG
@@ -25,7 +25,7 @@ export default function Section1() {
             Công ty cổ phần GuMac
             </span>
           </div>
-          <div className="space-y-[0.5rem] flex flex-col">
+          <div className="space-y-[0.5rem] flex flex-col mt-[2rem]">
             <p className="text-[0.875rem] font-normal lead-[1.375rem] uppercase text-[rgba(255,255,255,0.65)] max-md:text-[3.2rem] max-md:font-medium max-md:leading-[5.86667rem]">
               THỜI GIAN
             </p>
@@ -34,8 +34,8 @@ export default function Section1() {
             </span>
           </div>
         </div>
-        <div className="space-y-[2rem] md:mt-[2rem] max-md:ml-[10.4rem] max-md:w-[46.13rem]">
-          <div className="space-y-[0.5rem] flex flex-col md:hidden">
+        <div className="max-md:ml-[10.4rem] max-md:w-[46.13rem]">
+          <div className="space-y-[0.5rem] flex flex-col md:hidden mt-[2rem]">
             <p className="text-[3.2rem] font-medium leading-[5.86667rem] uppercase text-[rgba(255,255,255,0.65)]">
               THÀNH VIÊN
             </p>
@@ -43,7 +43,7 @@ export default function Section1() {
                 Trang Nguyễn, Tiến Dũng
             </span>
           </div>
-          <div className="space-y-[0.5rem] flex flex-col">
+          <div className="space-y-[0.5rem] flex flex-col mt-[2rem]">
             <p className="text-[0.875rem] font-normal lead-[1.375rem] uppercase text-[rgba(255,255,255,0.65)] max-md:text-[3.2rem] max-md:font-medium max-md:leading-[5.86667rem]">
               DỊCH VỤ
             </p>
@@ -51,7 +51,7 @@ export default function Section1() {
               UI/UX Design
             </span>
           </div>
-          <div className="space-y-[0.5rem] flex flex-col max-md:hidden">
+          <div className="space-y-[0.5rem] flex flex-col max-md:hidden mt-[2rem]">
             <p className="text-[0.875rem] font-normal lead-[1.375rem] uppercase text-[rgba(255,255,255,0.65)]">
               THÀNH VIÊN
             </p>
