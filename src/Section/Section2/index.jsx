@@ -62,11 +62,11 @@ export default function Section2() {
             Lịch sử hình thành của GuMac
           </h3>
           <p className="text-[4.8rem] md:text-[2rem] text-trinh-Gumac-textden">
-            2015-2022
+            2018-2022
           </p>
         </div>
         <div
-          className="pagination_year md:absolute md:flex-col-reverse position0 max-md:flex max-md:flex-row max-md:space-x-[11.2rem] max-md:mb-[6.4rem]"
+          className="pagination_year max-md:h-[15rem] md:absolute md:flex-col-reverse position0 max-md:flex max-md:flex-row max-md:space-x-[11.2rem] max-md:mb-[6.4rem]"
           ref={paginationPosition}
         ></div>
         <div className="absolute max-md:hidden top-[33.06rem] left-[8rem] space-y-[3.12rem]">
