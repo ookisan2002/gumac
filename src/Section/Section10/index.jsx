@@ -31,7 +31,7 @@ export default function Section10() {
         src={"/assest/section10/secction10_img1.png"}
         className="max-md:hidden h-[53.1155rem] w-[8.125rem] absolute top-[16.38rem] right-[13rem] object-cover"
       />
-      <div className="size-[86.13333rem] md:size-[30.875rem] rounded-full bg-[rgba(243,235,223,0.61)] absolute top-[253.87rem] md:top-[189.19rem] -right-[3.47rem] md:right-[17.06rem]"></div>
+      <div className="size-[56rem] md:size-[30.875rem] rounded-full bg-[rgba(243,235,223,0.61)] absolute top-[253.87rem] md:top-[189.19rem] -right-[3.47rem] md:right-[17.06rem]"></div>
       <div className="size-[60rem] md:size-[14.0625rem] rounded-full bg-[rgba(243,235,223,0.61)] absolute top-[608.8rem] md:top-[264.12rem] -right-[15.2rem] md:right-[8.81rem]"></div>
       <div className="size-[86.13333rem] md:size-[30.875rem] rounded-full absolute top-[4rem] md:top-[6.87rem] -left-[33.07rem] md:-left-[6.5rem] bg-[rgba(243,235,223,0.61)]"></div>
       <Image
@@ -39,9 +39,10 @@ export default function Section10() {
         width={601}
         alt=""
         src={"/assest/section10/secction10_img3.png"}
-        className="w-[94.66667rem] h-[123.73333rem] md:w-[34.3125rem] md:h-[37.5625rem] md:absolute md:top-[223.06rem] -ml-[3.2rem] md:left-[9.19rem] object-cover"
+        className="w-[94.66667rem] h-[123.73333rem] md:w-[27.6875rem] md:h-[36.1875rem] md:absolute md:top-[223.06rem] max-md:-ml-[3.2rem] md:left-[15.81rem] max-md:relative z-10 object-cover"
       />
-      <p className="w-[94.66667rem] md:w-[33.875rem] text-[3.73333rem] md:text-[1.125rem] leading-[150%] font-manrope font-normal max-md:mx-auto md:mr-[6.25rem] md:float-right">
+      <div className="size-[113.6rem] md:size-[33.25rem] rounded-full bg-white absolute max-md:right-[12.27rem] top-[351.47rem] md:left-[9.19rem] md:top-[227.38rem]"></div>
+      <p className="w-[94.66667rem] md:w-[33.875rem] text-[3.73333rem] md:text-[1.125rem] leading-[150%] font-manrope font-normal max-md:mx-auto md:mr-[6.25rem] md:float-right max-md:relative z-10">
         Page bộ sưu tập khách hàng có thể thoải mái lựa chọn theo các bộ sưu
         tập, danh mục có thể lọc theo mức giá và kích thước
       </p>
@@ -64,28 +65,28 @@ export default function Section10() {
         height={446.329}
         alt=""
         src={"/assest/section10/secction10_img4.png"}
-        className="max-md:hidden w-[41.97969rem] h-[27.89556rem] absolute top-[254.81rem] -left-[2.2rem] border-[0.37rem] border-[rgba(255,255,255,0.50)] rounded-[2rem] object-cover"
+        className="max-md:hidden w-[41.97969rem] h-[27.89556rem] absolute top-[254.81rem] z-20 -left-[2.06rem] border-[0.37rem] border-[rgba(255,255,255,0.50)] rounded-[2rem] object-cover"
       />
       <Image
         width={356}
         height={240}
         alt=""
         src={"/assest/section10/section10_img12.jpg"}
-        className="md:hidden w-[94.93333rem] h-[64rem] mb-[6.13rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
+        className="md:hidden w-[94.93333rem] h-[64rem] relative z-10 mb-[6.13rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
       />
       <Image
         width={356}
         height={240}
         alt=""
         src={"/assest/section10/section10_img12.jpg"}
-        className="md:hidden w-[94.93333rem] h-[64rem] mb-[6.13rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
+        className="md:hidden w-[94.93333rem] h-[64rem] relative z-10 mb-[6.13rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
       />
       <Image
         width={356}
         height={240}
         alt=""
         src={"/assest/section10/section10_img12.jpg"}
-        className="md:hidden w-[94.93333rem] h-[64rem] mb-[13.6rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
+        className="md:hidden w-[94.93333rem] h-[64rem] relative z-10 mb-[13.6rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
       />
       <div className="slider max-md:hidden">
         <div className="swiper-container mySwiper">

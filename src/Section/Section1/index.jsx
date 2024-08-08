@@ -11,9 +11,9 @@ export default function Section1() {
         className="absolute top-0 right-0 h-full w-full object-cover max-sm:object-[-235rem]"
       />
       <div data-aos="fade-right" className=" max-md:mb-[25.6rem] w-fit">
-        <h3 className="w-[94.66667rem] md:w-[50.75rem] text-white text-[8.53333rem] md:text-[4.625rem] font-semibold leading-[normal] md:leading-[124%]">
+        <h1 className="w-[94.66667rem] md:w-[50.75rem] text-white text-[8.53333rem] md:text-[4.625rem] font-semibold leading-[normal] md:leading-[124%]">
             Phong cách mới - Hạnh phúc mới, Giá trị thật - Hạnh phúc đích thực
-        </h3>
+        </h1>
       </div>
       <div data-aos="fade-left" className="flex flex-col  max-md:flex-row ">
         <div className=" max-md:w-[37.33rem]">

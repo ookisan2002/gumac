@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Section7() {
   return (
-    <section className="w-full h-[617.33rem] md:h-[114.06rem] flex items-center flex-col relative bg-[#FFFBF3] pt-[29.33rem] pb-[8.37rem] md:pt-[16.19rem] md:pb-[8.37rem]">
+    <section className="w-full h-[617.33rem] md:h-[114.06rem] flex items-center flex-col relative bg-[#FFFBF3] pt-[29.33rem] pb-[8.37rem] md:pt-[16.19rem] md:pb-[8.37rem] overflow-hidden">
       <Image
         width={294.179}
         height={299.662}
@@ -12,7 +12,7 @@ export default function Section7() {
         className="w-[32.8rem] h-[37.06667rem] md:w-[18.38619rem] md:h-[18.72888rem] absolute top-[10.67rem] md:top-[6.37rem] left-0"
       />
       <div className="w-[94.66rem] h-[317.6rem] md:w-[83.12rem] md:h-[38.44rem] rounded-2xl md:bg-[rgba(244,244,244,0.70)] flex items-center max-md:flex-col max-md:bg-transparent relative z-10 mb-[17.07rem] md:mb-[13.56rem]">
-        <div className="h-[137.6rem] w-[85.06667rem] md:h-full md:w-[22.8125rem] overflow-hidden object-cover  md:rounded-l-[1rem] md:rounded-bl-[1rem] max-md:rounded-2xl max-md:mb-[22.4rem]">
+        <div className="h-[137.6rem] w-[85.06667rem] md:h-full md:w-[22.8125rem] overflow-hidden object-cover  md:rounded-l-[1rem] md:rounded-bl-[1rem] max-md:rounded-[4.26667rem] max-md:mb-[22.4rem]">
           <video
             muted
             src="/assest/section7/section7_video.mp4"
@@ -73,8 +73,9 @@ export default function Section7() {
             height={937}
             alt=''
             src={'/assest/section7/section7_img2.png'}
-            className='w-[55.73333rem] h-[127.73333rem] md:w-[25.5rem] md:h-[58.5625rem] absolute right-0 top-[29.87rem] md:-right-[4rem] md:-top-[9.69rem]'
+            className='w-[55.73333rem] h-[127.73333rem] md:w-[25.5rem] md:h-[58.5625rem] absolute right-0 top-[29.87rem] md:-right-[4rem] md:-top-[9.69rem] z-10'
           />          
+          <div className="size-[60.53333rem] md:size-[21.375rem] rounded-full bg-[rgba(25,143,205,0.10)] absolute -right-[9.07rem] top-[47.5rem] md:right-[0.75rem] md:top-[1.56rem]"></div>
         </div>
       </div>
       <div className="w-[94.66667rem] md:w-[87.5rem]">
@@ -82,7 +83,7 @@ export default function Section7() {
           <h3 className="text-trinh-Gumac-textden font-semibold text-[8.53333rem] md:text-[3.5rem] leading-[normal] md:leading-[150%] max-md:text-center">
             Kết quả dự án
           </h3>
-          <p className="w-full md:w-[49.625rem] font-manrope font-normal leading-[170%] md:leading-[150%] text-[3.73333rem] md:text-[1.125rem] text-[#252425]">
+          <p className="w-full md:w-[49.625rem] font-manrope font-normal max-md:text-center leading-[170%] md:leading-[150%] text-[3.73333rem] md:text-[1.125rem] text-[#252425]">
             Sau khi nắm bắt được các vấn đề đang còn hạn chế cũng như tính chất
             thương hiệu của website GuMac chúng tôi đã tiến hành phân tích, xây
             dựng các quy chuẩn chung cho dự án. Và từ đó đã thiết kế giao diện
@@ -165,7 +166,7 @@ export default function Section7() {
                   "-webkit-text-stroke-width": "1px",
                   "-webkit-text-stroke-color": "rgba(25, 143, 205, 0.17)",
                 }}
-                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] mr-[2.75rem] -mt-[0.94rem]"
+                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] mr-[2.75rem] -mt-[0.94rem] max-md:hidden"
               >
                 Regular
               </h3>
@@ -174,7 +175,7 @@ export default function Section7() {
                   "-webkit-text-stroke-width": "1px",
                   "-webkit-text-stroke-color": "rgba(25, 143, 205, 0.17)",
                 }}
-                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] mr-[3.63rem] -mb-[0.88rem]"
+                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] mr-[3.63rem] -mb-[0.88rem] max-md:hidden"
               >
                 Medium
               </h3>
@@ -183,7 +184,7 @@ export default function Section7() {
                   "-webkit-text-stroke-width": "1px",
                   "-webkit-text-stroke-color": "rgba(25, 143, 205, 0.17)",
                 }}
-                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] -mt-[0.44rem]"
+                className="font-normal text-transparent w-fit text-[5.6rem] md:text-[2rem] -mt-[0.44rem] max-md:hidden"
               >
                 Bold
               </h3>

@@ -12,7 +12,7 @@ export default function Section3() {
           src={"/assest/section3/section3_img1.png"}
           className="w-full h-[82.78667rem] md:w-[54.25rem] md:h-full absolute top-0 left-0"
         />
-        <p className="w-[94.66667rem] md:w-[49.875rem] max-md:m-[9.75rem_auto_0] md:mr-[6.62rem] text-trinh-Gumac-textden text-[6.4rem] md:text-[2.8125rem] font-normal leading-[150%]">
+        <p className="w-[94.66667rem] md:w-[49.875rem] max-md:text-center max-md:m-[9.75rem_auto_0] md:mr-[6.62rem] text-trinh-Gumac-textden text-[6.4rem] md:text-[2.8125rem] font-normal leading-[150%]">
           Trải nghiệm{" "}
           <span className="text-trinh-Gumac-xanh text-[6.4rem] md:text-[2.8125rem] font-semibold leading-[150%]">
             mua hàng tuyệt vời trên Website
