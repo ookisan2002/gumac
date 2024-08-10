@@ -1,12 +1,39 @@
 "use client ";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, A11y, Navigation } from "swiper/modules";
+import { Autoplay, A11y, Navigation, Thumbs, Controller } from "swiper/modules";
 import "./styles.css";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 export default function Section10() {
+  const [swiperPC, setSwiperPC] = useState(null);
+  const [swiperMobile, setSwiperMobile] = useState(null);
+  const [swiperSubMobile, setSwiperSubMobile] = useState(null);
+  useEffect(()=>{
+    if(swiperPC&&swiperMobile&&swiperSubMobile){
+      swiperPC.controller.control = [swiperSubMobile];
+      swiperMobile.controller.control = [swiperSubMobile];
+      swiperSubMobile.controller.control = [swiperMobile,swiperPC];
+      // swiperPC.on('touchStart', () => {
+      //   swiperMobile.autoplay.stop();
+      // });
+      // swiperPC.on('touchEnd', () => {
+      //   swiperMobile.autoplay.start();
+      // });
+      // swiperSubMobile.on('touchStart', () => {
+      //   swiperMobile.autoplay.stop();
+      // });
+      // swiperSubMobile.on('touchEnd', () => {
+      //   swiperMobile.autoplay.start();
+      // });
+    }
+    console.log(swiperPC)
+  },[
+    swiperPC,swiperMobile,swiperSubMobile
+  ])
   return (
     <section className="w-full h-[902.13rem] md:h-[365.88rem] py-[17.07rem] max-md:flex max-md:flex-col md:pt-[12.75rem] pb-[11.25rem] relative bg-[#FFFBF3] overflow-hidden">
       <div className="max-md:mx-auto max-md:w-[91.46667rem] md:ml-[6rem] relative z-10 mb-[54.93rem] md:mb-[18.69rem]">
@@ -88,61 +115,129 @@ export default function Section10() {
         src={"/assest/section10/section10_img12.jpg"}
         className="md:hidden w-[94.93333rem] h-[64rem] relative z-10 mb-[13.6rem] border-[10px] border-white mx-auto rounded-[4.26667rem] object-cover"
       />
-      <div className="slider max-md:hidden">
-        <div className="swiper-container mySwiper">
-          <Swiper
-            slidesPerView={3}
-            loop={true}
-            className="mySwiper"
-            modules={[Autoplay, A11y]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            // breakpoints={{
-            //   376: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20,
-            //   },
-            // }}
-          >
-            <SwiperSlide>
-              <Image
-                width={278}
-                height={454}
-                alt=""
-                src={"/assest/section10/secction10_img8.png"}
-                className="size-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                width={278}
-                height={454}
-                alt=""
-                src={"/assest/section10/secction10_img9.png"}
-                className="size-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                width={278}
-                height={454}
-                alt=""
-                src={"/assest/section10/secction10_img10.png"}
-                className="size-full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                width={278}
-                height={454}
-                alt=""
-                src={"/assest/section10/secction10_img7.png"}
-                className="size-full"
-              />
-            </SwiperSlide>
-          </Swiper>
+      <div className="w-[54rem] h-[28.37rem] overflow-hidden absolute top-[314.44rem] left-[29.5rem]">
+        <div className="slider max-md:hidden">
+          <div className="swiper-container mySwiper">
+            <Swiper
+              slidesPerView={5}
+              loop={true}
+              className="mySwiper"
+              modules={[Autoplay, A11y, Controller]}
+              onSwiper={setSwiperPC}
+              loopAdditionalSlides={6}
+            >
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img8.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img9.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img10.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img7.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img8.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img9.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img10.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img7.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img8.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img9.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img10.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  width={278}
+                  height={454}
+                  alt=""
+                  src={"/assest/section10/secction10_img7.png"}
+                  className="size-full"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
       <p className="max-md:m-[0_auto_10.93rem] max-md:text-center font-manrope text-[#252425] font-normal leading-[150%] text-[3.73333rem] md:text-[1.125rem] w-[94.66667rem] md:w-[27.625rem] md:absolute md:top-[307.94rem] md:right-[17.37rem]">
@@ -158,61 +253,132 @@ export default function Section10() {
           className="w-full h-full absolute top-0 left-0 object-cover rounded-[6.4rem] md:rounded-[1.5rem]"
         />
         <div className="w-full h-full relative z-10">
-          <div className="w-[61.06667rem] h-[91.73333rem] md:w-[19.3125rem] md:h-[29.875rem] mx-auto slide2 mt-[19rem] md:mt-[7rem]">
-            <div className="swiper-container mySwiper">
-              <Swiper
-                slidesPerView={1}
-                loop={true}
-                className="mySwiper"
-                modules={[Autoplay, A11y]}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                // breakpoints={{
-                //   376: {
-                //     slidesPerView: 2,
-                //     spaceBetween: 20,
-                //   },
-                // }}
-              >
-                <SwiperSlide>
-                  <Image
-                    width={278}
-                    height={454}
-                    alt=""
-                    src={"/assest/section10/secction10_img7.png"}
-                    className="size-full"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    width={278}
-                    height={454}
-                    alt=""
-                    src={"/assest/section10/secction10_img8.png"}
-                    className="size-full"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    width={278}
-                    height={454}
-                    alt=""
-                    src={"/assest/section10/secction10_img9.png"}
-                    className="size-full"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    width={278}
-                    height={454}
-                    alt=""
-                    src={"/assest/section10/secction10_img10.png"}
-                    className="size-full"
-                  />
-                </SwiperSlide>
-              </Swiper>
+          <div className="w-[61.06667rem] h-[91.73333rem] md:w-[19.3125rem] md:h-[29.875rem] mx-auto mt-[19rem] md:mt-[7rem] overflow-hidden">
+            <div className="slide2">
+              <div className="swiper-container mySwiper">
+                <Swiper
+                  slidesPerView={5}
+                  loop={true}
+                  className="mySwiper"
+                  modules={[Autoplay, A11y, Controller]}
+                  onSwiper={setSwiperMobile}
+                  autoplay={{
+                    delay: 2500,
+                  }}
+                  loopAdditionalSlides={6}
+                >
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img7.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img8.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img9.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img10.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img7.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img8.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img9.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img10.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img7.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img8.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img9.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      width={278}
+                      height={454}
+                      alt=""
+                      src={"/assest/section10/secction10_img10.png"}
+                      className="size-full"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
           <div className="hidden absolute top-[33.06rem] left-[8rem] space-y-[3.12rem]">
@@ -255,21 +421,11 @@ export default function Section10() {
                 slidesPerView={5}
                 loop={true}
                 className="mySwiper"
-                navigation={{
-                  nextEl: ".next_btn",
-                  prevEl: ".prev_btn",
-                }}
-                modules={[Autoplay, Navigation]}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                // breakpoints={{
-                //   376: {
-                //     slidesPerView: 2,
-                //     spaceBetween: 20,
-                //   },
-                // }}
+                modules={[Autoplay, Navigation, Controller]}
+                onSwiper={setSwiperSubMobile}
+                slideToClickedSlide={true}
+                touchRatio={0.2}
+                loopAdditionalSlides={6}
               >
                 <SwiperSlide>
                   <Image
@@ -307,15 +463,7 @@ export default function Section10() {
                     className="size-full"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    width={278}
-                    height={454}
-                    alt=""
-                    src={"/assest/section10/secction10_img8.png"}
-                    className="size-full"
-                  />
-                </SwiperSlide>
+
                 <SwiperSlide>
                   <Image
                     width={278}
@@ -352,12 +500,40 @@ export default function Section10() {
                     className="size-full"
                   />
                 </SwiperSlide>
+
+                <SwiperSlide>
+                  <Image
+                    width={278}
+                    height={454}
+                    alt=""
+                    src={"/assest/section10/secction10_img7.png"}
+                    className="size-full"
+                  />
+                </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     width={278}
                     height={454}
                     alt=""
                     src={"/assest/section10/secction10_img8.png"}
+                    className="size-full"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={278}
+                    height={454}
+                    alt=""
+                    src={"/assest/section10/secction10_img9.png"}
+                    className="size-full"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={278}
+                    height={454}
+                    alt=""
+                    src={"/assest/section10/secction10_img10.png"}
                     className="size-full"
                   />
                 </SwiperSlide>
