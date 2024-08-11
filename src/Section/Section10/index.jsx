@@ -14,23 +14,22 @@ export default function Section10() {
   const [swiperSubMobile, setSwiperSubMobile] = useState(null);
   useEffect(()=>{
     if(swiperPC&&swiperMobile&&swiperSubMobile){
-      swiperPC.controller.control = [swiperSubMobile];
-      swiperMobile.controller.control = [swiperSubMobile];
+      swiperPC.controller.control = swiperSubMobile;
+      swiperMobile.controller.control = swiperSubMobile;
       swiperSubMobile.controller.control = [swiperMobile,swiperPC];
-      // swiperPC.on('touchStart', () => {
-      //   swiperMobile.autoplay.stop();
-      // });
-      // swiperPC.on('touchEnd', () => {
-      //   swiperMobile.autoplay.start();
-      // });
-      // swiperSubMobile.on('touchStart', () => {
-      //   swiperMobile.autoplay.stop();
-      // });
-      // swiperSubMobile.on('touchEnd', () => {
-      //   swiperMobile.autoplay.start();
-      // });
+      swiperPC.on('touchStart', () => {
+        swiperMobile.autoplay.stop();
+      });
+      swiperPC.on('touchEnd', () => {
+        swiperMobile.autoplay.start();
+      });
+      swiperSubMobile.on('touchStart', () => {
+        swiperMobile.autoplay.stop();
+      });
+      swiperSubMobile.on('touchEnd', () => {
+        swiperMobile.autoplay.start();
+      });
     }
-    console.log(swiperPC)
   },[
     swiperPC,swiperMobile,swiperSubMobile
   ])
@@ -124,7 +123,7 @@ export default function Section10() {
               className="mySwiper"
               modules={[Autoplay, A11y, Controller]}
               onSwiper={setSwiperPC}
-              loopAdditionalSlides={6}
+              loopAdditionalSlides={4}
             >
               <SwiperSlide>
                 <Image
@@ -265,7 +264,7 @@ export default function Section10() {
                   autoplay={{
                     delay: 2500,
                   }}
-                  loopAdditionalSlides={6}
+                  loopAdditionalSlides={4}
                 >
                   <SwiperSlide>
                     <Image
@@ -425,7 +424,7 @@ export default function Section10() {
                 onSwiper={setSwiperSubMobile}
                 slideToClickedSlide={true}
                 touchRatio={0.2}
-                loopAdditionalSlides={6}
+                loopAdditionalSlides={4}
               >
                 <SwiperSlide>
                   <Image
